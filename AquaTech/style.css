@@ -76,6 +76,7 @@ body{
     width: 300px;
     text-align: center;
 }
+
 .card img{
     width: 100px;
 }
@@ -109,12 +110,20 @@ body{
     background-color: white;
     display: flex;
     flex-direction: column;
-    height: 300px;
+    height: auto;
     width: 300px;
-    border-radius: 10px;
+    border-radius: 4px;
     border: 2px solid #32b9cd;
-
+    color: palevioletred;
+    font-weight: bold;
+    
 }
+.campo label {
+    align-self: flex-start; /* Alinha os rótulos à esquerda */
+    margin-left: 35px; /* Adiciona um pequeno espaço entre o rótulo e o campo de entrada */
+    font-size: 1.1em;
+}
+
 .card h2{
     color: palevioletred;
 }
@@ -123,21 +132,30 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 6px;
 }
 
 .campo input{
     width: 200px;
     padding: 7px 15px;
+    margin: 5px;
     border:2px solid #32b9cd;
+    border-radius: 8px;
 
     
+}
+
+.campo input::placeholder {
+    text-align: center; /* Centraliza o texto do placeholder */
 }
 .formulario button{
     margin-top: 20px;
     padding: 10px 20px;
     background-color: palevioletred;
+    border-radius: 5px;
     border: none;
     color: #fff;
+    margin-bottom: 10px;
   
 }
 .header a {
